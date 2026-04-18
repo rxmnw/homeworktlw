@@ -9,8 +9,10 @@
       "Courier New", monospace;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -209,6 +211,9 @@
   .rounded-\[5px\] {
     border-radius: 5px;
   }
+  .rounded-\[20px\] {
+    border-radius: 20px;
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -219,8 +224,14 @@
   .bg-\[\#252B42\] {
     background-color: #252B42;
   }
+  .bg-transparent {
+    background-color: transparent;
+  }
   .p-\[10px_20px\] {
     padding: 10px 20px;
+  }
+  .p-\[10px_25px\] {
+    padding: 10px 25px;
   }
   .p-\[20px\] {
     padding: 20px;
@@ -228,8 +239,17 @@
   .pb-\[100px\] {
     padding-bottom: 100px;
   }
+  .text-center {
+    text-align: center;
+  }
+  .text-\[14px\] {
+    font-size: 14px;
+  }
   .text-\[16px\] {
     font-size: 16px;
+  }
+  .text-\[20px\] {
+    font-size: 20px;
   }
   .text-\[24px\] {
     font-size: 24px;
@@ -237,9 +257,20 @@
   .text-\[30px\] {
     font-size: 30px;
   }
+  .text-\[40px\] {
+    font-size: 40px;
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .font-extrabold {
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
@@ -265,6 +296,11 @@
       display: none;
     }
   }
+  .lg\:w-\[45\%\] {
+    @media (width >= 64rem) {
+      width: 45%;
+    }
+  }
   .lg\:flex-row {
     @media (width >= 64rem) {
       flex-direction: row;
@@ -278,6 +314,11 @@
   .lg\:text-\[14px\] {
     @media (width >= 64rem) {
       font-size: 14px;
+    }
+  }
+  .lg\:text-\[58px\] {
+    @media (width >= 64rem) {
+      font-size: 58px;
     }
   }
 }
