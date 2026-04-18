@@ -190,6 +190,9 @@
   .flex-col {
     flex-direction: column;
   }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
   .items-center {
     align-items: center;
   }
@@ -239,6 +242,9 @@
   .bg-transparent {
     background-color: transparent;
   }
+  .bg-white {
+    background-color: var(--color-white);
+  }
   .p-\[10px_20px\] {
     padding: 10px 20px;
   }
@@ -248,11 +254,17 @@
   .p-\[20px\] {
     padding: 20px;
   }
+  .p-\[25px_75px\] {
+    padding: 25px 75px;
+  }
   .p-\[30px_15px\] {
     padding: 30px 15px;
   }
   .p-\[50px_20px\] {
     padding: 50px 20px;
+  }
+  .p-\[50px_25px\] {
+    padding: 50px 25px;
   }
   .px-\[20px\] {
     padding-inline: 20px;
@@ -297,6 +309,9 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .text-\[\#252B42\] {
+    color: #252B42;
+  }
   .text-\[\#737373\] {
     color: #737373;
   }
@@ -325,6 +340,11 @@
       width: 45%;
     }
   }
+  .lg\:w-\[50\%\] {
+    @media (width >= 64rem) {
+      width: 50%;
+    }
+  }
   .lg\:flex-row {
     @media (width >= 64rem) {
       flex-direction: row;
@@ -340,6 +360,16 @@
       gap: 50px;
     }
   }
+  .lg\:bg-transparent {
+    @media (width >= 64rem) {
+      background-color: transparent;
+    }
+  }
+  .lg\:px-\[350px\] {
+    @media (width >= 64rem) {
+      padding-inline: 350px;
+    }
+  }
   .lg\:px-\[400px\] {
     @media (width >= 64rem) {
       padding-inline: 400px;
@@ -353,6 +383,11 @@
   .lg\:text-\[58px\] {
     @media (width >= 64rem) {
       font-size: 58px;
+    }
+  }
+  .lg\:text-white {
+    @media (width >= 64rem) {
+      color: var(--color-white);
     }
   }
 }
